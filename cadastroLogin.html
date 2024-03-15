@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css" type="text/css" media="all" />
+    <title>Projeto1</title>
+  </head>
+  <body>
+    <section>
+      <div id="logo">
+        <h1>Dados Login</h1>
+      </div>
+      <div id="boxForm">
+        <label for="Usuário">Usuário</label>
+        <input class="boxTxt" type="text" name="txtNome" id="txtNome"/>
+        <label for="Senha">Senha</label>
+        <input class="boxTxt" type="password" name="txtSenha1" id="txtSenha1" onkeyup="verificarSenha();"/>
+        <label for="Senha">Informe novamente a senha</label>
+        <input class="boxTxt" type="password" name="txtSenha2" id="txtSenha2" onkeyup="senhaE()"/>
+        <p id="senhaErro"></p>
+        <div class="boxCaractere">
+          <p id="msg1">Minimo 8 caracrteres*</p>
+          <p id="msg2">Minimo 1 letra maiuscula*</p>
+          <p id="msg3">Minimo 1 letra minuscula*</p>
+          <p id="msg4">Minimo 1 numero*</p>
+        </div>
+        <div id="boxBtn">
+        <input class="boxBotao" type="button" name="btn1" id="btn1" value="VOLTAR"/>
+        <input class="boxBotao" type="button" name="btn2" id="btn2" value="PROXIMO" onclick="senhaE()"/>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2024 | Desenvolvido por @Walter Dev</p>
+    </footer>
+    <script src="script/cadastroLogin.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
